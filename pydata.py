@@ -5,7 +5,7 @@ import matplotlib as mpl
 import time as time
 
 
-START = time.time()
+
 def first_generator():
     x = int(input("Please enter a value for the number of indexes in the First Activation Layer: "))
     
@@ -91,8 +91,8 @@ sigmoid = tf.sigmoid(sig)
 print("tf.sigmoid(sig = tf.constant(w))", end='\n')
 print(sigmoid, end='\n')
 print(type(sigmoid), end='\n')
-end = time.time()
-runtime = end - start
+
+
 print("runtime", end='\n')
 
 
