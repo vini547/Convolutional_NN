@@ -4,6 +4,7 @@ import scipy as sp
 import matplotlib as mpl
 import time as time
 
+
 START = time.time()
 def first_generator():
     x = int(input("Please enter a value for the number of indexes in the First Activation Layer: "))
@@ -21,8 +22,6 @@ def bias_first_activation(a):
     bias_first_activation = np.array(buff)
     return bias_first_activation
 
-
-
 def transposed_weights_matrix_constructor(np_array):
     lenght = len(np_array)
     x = int(input("Please enter a value for the Number of Neurons in the Hidden Layer: "))      
@@ -33,7 +32,6 @@ def transposed_weights_matrix_constructor(np_array):
             transposed_weights_matrix_constructor[i][j] = round(np.random.uniform(1.0,9.0),2)
 
     return transposed_weights_matrix_constructor
-
 
 """ def weighted_sum(a, b):
   e =[]
@@ -52,7 +50,6 @@ def weighted_sum(a, b):
   e = np.sum(a * b2)        
   return e  
 
-
 def initialize_network():
     a = first_generator()
     b = transposed_weights_matrix_constructor(a)
@@ -62,8 +59,6 @@ def initialize_network():
     sig = tf.constant(w)
     sigmoid = tf.sigmoid(sig)
     print(sigmoid)
-
-    
 
 np.set_printoptions(precision=6, suppress=True, linewidth=200)
 a = first_generator()
