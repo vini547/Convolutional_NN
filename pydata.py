@@ -46,7 +46,12 @@ def transposed_weights_matrix_constructor(np_array):
 
 def weighted_sum(a, b):
   b2 = b.transpose()
+  print("b2", end='\n')
   print(b2)
+  print("type", end='\n')
+  print(type(b2), end='\n')
+  print("shape", end='\n')
+  print(b2.shape, end='\n')
   e = np.sum(a * b2)        
   return e  
 
@@ -67,6 +72,7 @@ h = weighted_sum(a,b)
 print("first_generator", end='\n')
 print(a, end='\n')
 print(type(a), end='\n')
+print(a.shape[0], end='\n')
 print('\n')
 print("transposed_weights_matrix_constructor", end='\n')
 print(b, end='\n')
