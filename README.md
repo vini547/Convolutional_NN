@@ -1,4 +1,4 @@
-# Pydata
+# Convolutional Neural Network
 Neural Network from Scratch, step by step convolutional neural network to detect numbers from pixels in an image usin
 
 def first_generator():
